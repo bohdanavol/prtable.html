@@ -2,8 +2,8 @@
 <html lang="uk">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Варіант 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,89 +11,139 @@
 <body>
     <h1>Таблиця турніру</h1>
 
-    <table>
+    <table class="turnir">
+        <caption>Результати спортивного турніру</caption>
+        <colgroup>
+            <col style="width:5%">
+            <col style="width:30%">
+            <col style="width:15%">
+            <col style="width:15%">
+            <col style="width:15%">
+            <col style="width:15%">
+        </colgroup>
+
         <thead>
             <tr>
-                <th>N*</th>
-                <th>Команда</th>
-                <th>Кількість зіграних матчів</th>
-                <th>Перемоги</th>
-                <th>Поразки</th>
-                <th>Очки</th>
+                <th scope="col">№</th>
+                <th scope="col">Команда</th>
+                <th scope="col">Матчі</th>
+                <th scope="col">Перемоги</th>
+                <th scope="col">Поразки</th>
+                <th scope="col">Очки</th>
             </tr>
         </thead>
+
         <tbody>
-            <tr class="team1">
-                <td>1</td>
-                <td class="team">Динамо Київ</td>
-                <td>5</td>
-                <td>5</td>
+            <tr class="gold">
+                <td class="num">1</td>
+                <td class="team1">Динамо Київ</td>
+                <td class="right">5</td>
+                <td class="right">5</td>
                 <td class="right">0</td>
                 <td class="right">15</td>
             </tr>
-            <tr class="team2">
-                <td>2</td>
-                <td class="team">Шахтар Донецьк</td>
-                <td>5</td>
-                <td>4</td>
+            <tr class="silver">
+                <td class="num">2</td>
+                <td class="team2">Шахтар Донецьк</td>
+                <td class="right">5</td>
+                <td class="right">4</td>
                 <td class="right">1</td>
                 <td class="right">13</td>
             </tr>
-            <tr class="team3">
-                <td>3</td>
-                <td class="team">Колос Ковалівка</td>
-                <td>5</td>
-                <td>4</td>
+            <tr class="bronze">
+                <td class="num">3</td>
+                <td class="team3">Колос Ковалівка</td>
+                <td class="right">5</td>
+                <td class="right">4</td>
                 <td class="right">1</td>
                 <td class="right">12</td>
             </tr>
-
             <tr>
-                <td>4</td>
+                <td class="num">4</td>
                 <td class="team">Кривбас</td>
-                <td>5</td>
-                <td>3</td>
+                <td class="right">5</td>
+                <td class="right">3</td>
                 <td class="right">2</td>
                 <td class="right">10</td>
             </tr>
             <tr>
-                <td>5</td>
+                <td class="num">5</td>
                 <td class="team">Зоря</td>
-                <td>4</td>
-                <td>3</td>
+                <td class="right">4</td>
+                <td class="right">3</td>
                 <td class="right">1</td>
                 <td class="right">8</td>
             </tr>
             <tr>
-                <td>6</td>
+                <td class="num">6</td>
                 <td class="team">Металіст</td>
-                <td>4</td>
-                <td>2</td>
+                <td class="right">4</td>
+                <td class="right">2</td>
                 <td class="right">2</td>
                 <td class="right">7</td>
             </tr>
             <tr>
-                <td>7</td>
+                <td class="num">7</td>
                 <td class="team">Полісся</td>
-                <td>5</td>
-                <td>1</td>
+                <td class="right">5</td>
+                <td class="right">1</td>
                 <td class="right">4</td>
-                <td class="right">6.5</td>
+                <td class="right" rowspan="2">6.5</td>
             </tr>
             <tr>
-                <td>8</td>
-                <td class="team">Кривбас</td>
-                <td>5</td>
-                <td>1</td>
+                <td class="num">8</td>
+                <td class="team">Верес</td>
+                <td class="right">5</td>
+                <td class="right">1</td>
                 <td class="right">4</td>
-                <td class="right">6.5</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">Примітка: за однакової кількості очок позиції визначаються додатковими показниками
+                    (різниця м’ячів, особисті зустрічі тощо).
+                </td>
+            </tr>
+        </tfoot>
     </table>
 
-</body>
-
-</html>
+    <section class="bombardiro">
+        <h2>Найкращі бомбардири турніру</h2>
+        <table>
+            <caption>Статистика бомбардирів</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Гравець</th>
+                    <th scope="col">Команда</th>
+                    <th scope="col">Голи</th>
+                    <th scope="col">Рекорди/факти</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="team">Іван Петренко</td>
+                    <td>Динамо Київ</td>
+                    <td class="right">7</td>
+                    <td>Хет-трик у 2-му турі</td>
+                </tr>
+                <tr>
+                    <td class="team">Олександр Коваль</td>
+                    <td>Шахтар Донецьк</td>
+                    <td class="right">5</td>
+                    <td>Серія з 4 матчів з голами</td>
+                </tr>
+                <tr>
+                    <td class="team">Марко Романюк</td>
+                    <td>Колос Ковалівка</td>
+                    <td class="right">4</td>
+                    <td>Найкращий пенальтист (4/4)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="notes">Найближчі матчі: 12.09 — Колос vs Шахтар; 13.09 — Динамо vs Зоря. Дискваліфікації: Металіст — 1
+            матч (жовті картки).</p>
+    </section>
 </body>
 
 </html>
