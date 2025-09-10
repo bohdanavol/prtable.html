@@ -1,0 +1,56 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #d6d6ec;
+    padding: 24px
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 12px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center
+}
+
+th {
+    background: #2e7d32;
+    color: #fff
+}
+
+.team {
+    text-align: left
+}
+
+.team1 {
+    background: #f6d42b;
+    font-weight: 700
+}
+
+.team2 {
+    background: #bee3fa
+}
+
+.team3 {
+    background: #e54f13
+}
+
+.right {
+    text-align: right
+}
+
+.muted {
+    color: #666;
+    font-size: 14px;
+    margin: 8px 0 0;
+    text-align: center
+}
